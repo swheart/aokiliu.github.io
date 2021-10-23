@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Aoki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=yes" />
+	
+	
+</head>
+<style>
+    *{padding: 0; margin: 0; font-family: "Lato", sans-serif}
+    i{font-size: 14px}
+	body{background: #fb9cb6; color: #ffffff}
+    div{font-size: 20px; text-align: center; padding-top: 15px;}
+    div span{display: inline-block; width: 50px; height: 50px;padding: 10px; border-radius: 5px}
+    p{font-size: 18px}
+    span.red{background: #ff0000}
+    span.yg{background: yellowgreen}
+    span.or{background: orange}
+    span.pi{background: palevioletred}
+    span.pk{background: #00a0e9}
+    span.mk{background: #1FADC5}
+    span p:first-child{font-size: 25px}
+    span p:last-child{font-size: 14px}
+</style>
+<body>
+
+<script type="text/javascript" src="js/timecountdown.js"></script>
+<script type="text/javascript">
+    /**
+     * time.day 和 time.dayZero 区别
+     * time.day 如果是1天 返回 1
+     * time.dayZero 如果是1天 则返回 01
+     * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
+     */
+    window.onload=function(){
+        xcsoft.countdown('2022-10-17',function (time) {
+            //time.days=总天数
+            document.getElementById("d1").innerHTML=time.day
+            document.getElementById("h1").innerHTML=time.hourZero
+            document.getElementById("i1").innerHTML=time.minuteZero
+            document.getElementById("s1").innerHTML=time.secondZero
+            
+        },function (time) {
+            //倒计时结束后的操作
+        })
+
+    }
+</script>
+
+
+<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3 centered">
+				<h3>2022年10月17日</h3>
+				<h3  style="padding-bottom: 30px;">阴历九月廿二</h3>
+				
+				<p align="center"><img src="http://docmt.mrshallwe.com/aokiliu2022.png" alt="aoki" width="50%" height="50%"></p>
+				
+				
+				
+				
+				
+				<div align="center" style="font-size: 32px;padding-top:20px;padding-bottom:20px">
+				<h3>距离Aoki生日还有</h3>
+				<div>
+				    <span class="yg">
+				        <p id="d1"></p>
+				        <p>天</p>
+				    </span>
+				    <span class="or">
+				        <p id="h1"></p>
+				        <p>时</p>
+				    </span>
+				    <span class="pi">
+				        <p id="i1"></p>
+				        <p>分</p>
+				    </span>
+				    <span class="pk">
+				        <p id="s1"></p>
+				        <p>秒</p>
+				    </span>
+				    
+				</div>
+				</div>
+		
+				
+				
+			
+			<!--	<table border="0" align="center">
+				<tr>
+					<td><h3 style="margin-top: 50px;margin-right: 10px" align="center"><a href="hb2ranran.html"><button type="submit" class="btn btn-success" style="background-color:#4169E1;">2020年庆生页面</button></a></h3></td>
+					<td><h3 style="margin-top: 50px;margin-left: 10px" align="center"><a href="hb2ranran_2019.html"><button type="submit" class="btn btn-success" style="background-color:#4169E1;">2019年庆生页面</button></a></h3></td>
+				</tr>
+			</table>-->
+				
+				
+								
+													<!--<h3 style="margin-top: 50px" align="center"><a href="hb2ranran_2020.html"><button type="submit" class="btn btn-success" style="background-color:#4169E1;">2020年庆生页面</button></a></h3>-->
+
+													<!--<h3 style="margin-top: 20px" align="center"><a href="hb2ranran_2019.html"><button type="submit" class="btn btn-success" style="background-color:#4169E1;">2019年庆生页面</button></a></h3>-->
+
+
+			</div>
+		</div>
+		
+		
+	</div>
+
+
+
+<div>
+  
+</div>
+
+
+
+</body>
+</html>
