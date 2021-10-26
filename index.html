@@ -1,31 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-		<link rel="shortcut icon" href="http://docmt.mrshallwe.com/aokiliu0000.JPG">
-
+<html class="no-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Aoki</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/hover.zoom.js"></script>
-    <script src="assets/js/hover.zoom.conf.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=yes" />
+		<link rel="shortcut icon" href="http://docmt.mrshallwe.com/aokihb2022.png">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	
 	
 	<script>
@@ -39,30 +20,94 @@
 	</script>
 	
 	
-  </head>
+</head>
+<style>
+    *{padding: 0; margin: 0; font-family: "Lato", sans-serif}
+    i{font-size: 14px}
+	body{background: #EB7093; color: #ffffff}
+    div{font-size: 20px; text-align: center; padding-top: 15px;}
+    div span{display: inline-block; width: 70px; height: 70px;padding: 12px; border-radius: 5px;line-height:20px}
+    p{font-size: 18px}
+    span.red{background: #ff0000}
+    span.yg{background: yellowgreen}
+    span.or{background: orange}
+    span.pi{background: #fb9cb6}
+    span.pk{background: #00a0e9}
+    span.mk{background: #1FADC5}
+    span p:first-child{font-size: 25px}
+    span p:last-child{font-size: 20px}
+</style>
+<body>
 
-  <body>
-	
-	<!-- +++++ Projects Section +++++ -->
-	<div class="container">
+<script type="text/javascript" src="js/timecountdown.js"></script>
+<script type="text/javascript">
+    /**
+     * time.day 和 time.dayZero 区别
+     * time.day 如果是1天 返回 1
+     * time.dayZero 如果是1天 则返回 01
+     * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
+     */
+    window.onload=function(){
+        xcsoft.countdown('2022-10-17',function (time) {
+            //time.days=总天数
+            document.getElementById("d1").innerHTML=time.day
+            document.getElementById("h1").innerHTML=time.hourZero
+            document.getElementById("i1").innerHTML=time.minuteZero
+            document.getElementById("s1").innerHTML=time.secondZero
+            
+        },function (time) {
+            //倒计时结束后的操作
+        })
+
+    }
+</script>
+
+
+<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3 centered">
-				<h3>2021年10月27日</h3>
+				<!--
+				<h3>2022年10月17日</h3>
 				<h3  style="padding-bottom: 30px;">阴历九月廿二</h3>
+				!-->
+				<h3>2021年10月27日</h3>
+				<h2  style="padding-bottom: 30px;">Aoki 生日快乐</h2>
 				
-				<p align="center"><img src="http://docmt.mrshallwe.com/aokiliu0000.JPG" alt="aoki" width="50%" height="50%"></p>
+				<p align="center"><img src="http://docmt.mrshallwe.com/aokihb2022.png" alt="aoki" width="50%" height="50%"></p>
 				
 				
 				
 				
-				<hr />
 				
-				<div align="center" style="font-size: 30px;padding-top:20px;padding-bottom:20px">
-				<span id="span_dt_dt" style='border:0px solid black;background-color:#FFFFFF' ></span>
+				<div align="center" style="font-size: 32px;padding-top:20px;padding-bottom:20px">
+				<h3>距离 Aoki 2022 生日还有</h3>
+				
 				</div>
+				
+				<div>
+				    <span class="yg">
+				        <p id="d1" ></p>
+				        <p>天</p>
+				    </span>
+				    <span class="or">
+				        <p id="h1"></p>
+				        <p>时</p>
+				    </span>
+				    <span class="pi">
+				        <p id="i1"></p>
+				        <p>分</p>
+				    </span>
+				    <span class="pk">
+				        <p id="s1"></p>
+				        <p>秒</p>
+				    </span>
+				    
+				</div>
+		<div style="padding-bottom: 50px;"></div>
 				<hr />
 				
-				
+				<h6>嘘~<br> </h6>
+				<h6 id="span_dt_dt" ></h6>
 			
 			<!--	<table border="0" align="center">
 				<tr>
@@ -82,18 +127,24 @@
 		</div>
 		
 		
-	</div><!-- /container -->
-	
-	
-	<!-- <br>倒计时已结束<br>--></br>
+	</div>
 
 
+
+<div>
+  
+</div>
+
+
+
+</body>
+</html>
 <SCRIPT language=javascript>
 <!--
 //document.write("");
 function show_time(){
 window.setTimeout("show_time()", 1000);
-BirthDay=new Date("10/27/2021 00:00:00");//改成你的计时日期
+BirthDay=new Date("10/24/2024 00:00:00");//改成你的计时日期
 today=new Date();
 timeold=(BirthDay.getTime()-today.getTime());
 sectimeold=timeold/1000
@@ -106,23 +157,8 @@ hrsold=Math.floor(e_hrsold);
 e_minsold=(e_hrsold-hrsold)*60;
 minsold=Math.floor((e_hrsold-hrsold)*60);
 seconds=Math.floor((e_minsold-minsold)*60);
-span_dt_dt.innerHTML="距离Aoki生日还有"+"<br>"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒" ;
+span_dt_dt.innerHTML="距离 Aoki 30岁生日还有 "+daysold+" 天";
 }
 show_time();
 //-->
 </SCRIPT>
-	
-	
-	
-	
-	
-	
-	
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
-</html>
